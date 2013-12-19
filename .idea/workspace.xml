@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="467e68f2-5598-43fa-9809-134e7f5c7886" name="Default" comment="" />
+    <list default="true" id="467e68f2-5598-43fa-9809-134e7f5c7886" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <ignored path="Knockout.DataMagic.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,10 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="todoDemo.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="todoDemo.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoDemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.017400205" vertical-offset="34" max-vertical-offset="4590">
+            <state line="3" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="-0.65384614" vertical-offset="34" max-vertical-offset="4590">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="42" selection-start="669" selection-end="669" vertical-scroll-proportion="0.3132037" vertical-offset="0" max-vertical-offset="1445">
               <folding />
             </state>
           </provider>
@@ -60,6 +71,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/todoDemo.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -239,7 +251,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todoDemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.017400205" vertical-offset="34" max-vertical-offset="4590">
+        <state line="3" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="-0.65384614" vertical-offset="34" max-vertical-offset="4590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="42" selection-start="669" selection-end="669" vertical-scroll-proportion="0.3132037" vertical-offset="0" max-vertical-offset="1445">
           <folding />
         </state>
       </provider>
