@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467e68f2-5598-43fa-9809-134e7f5c7886" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\SpecRunner.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\lib\jasmine-1.3.0\MIT.LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\lib\jasmine-1.3.0\jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\lib\jasmine-1.3.0\jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\lib\jasmine-1.3.0\jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\spec\BinderSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\spec\ProviderSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\spec\SpecHelper.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\css\bootstrap-theme.css" afterPath="$PROJECT_DIR$/stylesheets/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\css\bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/stylesheets/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\css\bootstrap.css" afterPath="$PROJECT_DIR$/stylesheets/bootstrap.css" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\css\bootstrap.min.css" afterPath="$PROJECT_DIR$/stylesheets/bootstrap.min.css" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\app\dbBinder\Provider.js" afterPath="$PROJECT_DIR$/javascripts/app/dbBinder/provider.js" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\app\dbBinder\binder.js" afterPath="$PROJECT_DIR$/javascripts/app/dbBinder/binder.js" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\app\dbBinder\fireWire.js" afterPath="$PROJECT_DIR$/javascripts/app/dbBinder/fireWire.js" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\bootstrap.js" afterPath="$PROJECT_DIR$/javascripts/libs/bootstrap.js" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\bootstrap.min.js" afterPath="$PROJECT_DIR$/javascripts/libs/bootstrap.min.js" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\firebase\firebase.js" afterPath="$PROJECT_DIR$/javascripts/libs/firebase/firebase.js" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\firebase\simpleLogin.js" afterPath="$PROJECT_DIR$/javascripts/libs/firebase/simpleLogin.js" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/javascripts/libs/jquery-1.10.2.min.js" />
+      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\knockout-3.0.0.js" afterPath="$PROJECT_DIR$/javascripts/libs/knockout-3.0.0.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todoDemo.html" afterPath="$PROJECT_DIR$/todoDemo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Knockout.DataMagic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +47,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="todoDemo.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="todoDemo.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoDemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="153" selection-end="153" vertical-scroll-proportion="0.06960082" vertical-offset="34" max-vertical-offset="4590">
+            <state line="18" column="26" selection-start="612" selection-end="612" vertical-scroll-proportion="13.730769" vertical-offset="663" max-vertical-offset="4573">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="params.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/params.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="977">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascripts/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="binder.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/binder.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -37,16 +86,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="2777" selection-end="2777" vertical-scroll-proportion="-32.03846" vertical-offset="0" max-vertical-offset="1445">
+            <state line="13" column="8" selection-start="533" selection-end="533" vertical-scroll-proportion="-6.1923075" vertical-offset="60" max-vertical-offset="1445">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="fireWire.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app/dbBinder/fireWire.js">
+        <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/fireWire.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="provider.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/provider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -136,7 +194,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -150,11 +208,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -168,7 +222,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -188,7 +242,42 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\stylesheets" />
+      <recent name="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\javascripts" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -242,23 +331,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/dbBinder/fireWire.js">
+    <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/binder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/fireWire.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1016">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1016">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="2777" selection-end="2777" vertical-scroll-proportion="-32.03846" vertical-offset="0" max-vertical-offset="1445">
+        <state line="13" column="8" selection-start="533" selection-end="533" vertical-scroll-proportion="-6.1923075" vertical-offset="60" max-vertical-offset="1445">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todoDemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="153" selection-end="153" vertical-scroll-proportion="0.06960082" vertical-offset="34" max-vertical-offset="4590">
+        <state line="18" column="26" selection-start="612" selection-end="612" vertical-scroll-proportion="13.730769" vertical-offset="663" max-vertical-offset="4573">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
