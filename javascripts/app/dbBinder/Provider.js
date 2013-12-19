@@ -1,8 +1,8 @@
 /**
  * Created by Danny on 13/12/13.
  */
+    
 var autoBinder = autoBinder || {};
-
 
 autoBinder.Provider = function(parameters){
     var self = this;

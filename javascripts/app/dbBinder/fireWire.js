@@ -2,6 +2,8 @@
  * Created by Danny on 13/12/13.
  */
 
+var autoBinder = autoBinder || {};
+
 autoBinder.FireWire = function(){
     var self = this;
     self.basePath = '';
@@ -24,38 +26,3 @@ autoBinder.FireWire = function(){
         });
     };
 };
-
-//autoBinder.FireWire.prototype = function(){
-//
-//    var localRef = function(path){
-//        return new Firebase(basePath + path);
-//    };
-//
-//    var init = function(options){
-//        this.basePath = options.firebasePath;
-//    };
-//
-//    var saveData = function(path, data){
-//        var ref = localRef(path);
-//        ref.push().set(data);
-//    };
-//
-//    return {
-//        init : init,
-//        saveData : saveData
-//    };
-//}();
-//
-//autoBinder.FakeWire = function(){
-//    var self = this;
-//    self.basePath = '';
-//    self.model  = {};
-//
-//    self.init = function(options){
-//        self.basePath = options.baseUrl;
-//    };
-//
-//    self.saveData = function(data){
-//        self.model = data;
-//    };
-//};
