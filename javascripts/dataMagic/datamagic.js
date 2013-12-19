@@ -1,11 +1,33 @@
 /**
- * Created by daniel.whittaker on 30/10/13.
+ * Created by daniel.whittaker on 19/12/13.
  */
-
 var autoBinder = autoBinder || {};
 
+autoBinder.FireWire = function(){
+    var self = this;
+    self.basePath = '';
+    self.model  = {};
+    self.localRef = {};
+
+    self.init = function(options){
+        self.basePath = options.baseUrl;
+        self.localRef = new Firebase(self.basePath);
+    };
+
+    self.saveData = function(data){
+        self.model = data;
+        self.localRef.set(data, function(error){
+            if(error){
+                console.error(error.toString());
+            }else{
+                console.log("Saved!");
+            }
+        });
+    };
+};
+
 autoBinder.Binder = function(){
-   // Private members
+    // Private members
     this.payload = {};
     this.callBack = {};
     this.viewModel = {};
@@ -85,7 +107,7 @@ autoBinder.Binder.prototype = function(){
 
     var cleanPayload = function(options){
         ko.utils.arrayForEach(options.exclusions, function(exclude){
-           delete options.payload[exclude];
+            delete options.payload[exclude];
         });
     };
 
@@ -97,3 +119,41 @@ autoBinder.Binder.prototype = function(){
         attach : attach
     };
 }();
+
+autoBinder.Provider = function(parameters){
+    var self = this;
+    self.binder = parameters.binder;
+    self.viewModel = parameters.viewModel;
+    self.wire = parameters.wire;
+    self.options = parameters.options;
+    self.active = parameters.options.autoStart || false;
+    self.initialised = false;
+
+    self.init = function(){
+        self.wire.init(self.options);
+        self.binder.attach(self.viewModel, self.options.exclusions || [], self.receiveUpdate);
+        self.initialised = true;
+    };
+
+    self.start = function(){
+        if(!self.initialised) self.init();
+        self.active = true;
+    };
+
+    self.stop = function(){
+        self.active = false;
+    };
+
+    self.receiveUpdate = function(data){
+        if(self.active) self.wire.saveData(data);
+    };
+
+    if(self.active){
+        self.init();
+    }
+
+    return{
+        start   : self.start,
+        stop    : self.stop
+    }
+};
