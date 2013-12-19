@@ -2,6 +2,12 @@
 <head>
     <title>todo datamagic demo</title>
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+        .completed{
+            text-decoration: line-through;
+        }
+    </style>
 </head>
 <body>
 
@@ -31,7 +37,7 @@
                 </label>
             </div>
                     <ul id="todo-list" data-bind="foreach: filteredTodos">
-                        <li data-bind="css: { completed: completed, editing: editing }">
+                        <li data-bind="css: { completed: completed }">
                             <div class="checkbox">
                                 <label>
                                     <input class="toggle" data-bind="checked: completed" type="checkbox">
@@ -137,7 +143,6 @@
     var Todo = function (title, completed) {
         this.title = ko.observable(title);
         this.completed = ko.observable(completed || false);
-        this.editing = ko.observable(false);
     };
 
     // our main view model
@@ -228,7 +233,7 @@
 
     var options = {
         baseUrl     : "https://logthis.firebaseIO.com/todos",
-        exclusions  : ["add", "cancelEditing", "editItem", "getLabel", "remove", "removeCompleted", "saveEditing", "current", "filteredTodos", "completedCount", "remainingCount", "allCompleted"],
+        exclusions  : ["add", "getLabel", "remove", "removeCompleted", "current", "filteredTodos", "completedCount", "remainingCount", "allCompleted"],
         autoStart: false
     };
 
