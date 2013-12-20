@@ -59,10 +59,10 @@
     // Initialise the provider
     var provider = new autoBinder.Provider(
         {
-            binder: new autoBinder.Binder(),
-            viewModel: viewModel,
-            wire: new autoBinder.FireWire(),
-            options: options
+            binder: new autoBinder.Binder(),// Watches for changes in your view model
+            viewModel: viewModel,           // The view model to watch
+            wire: new autoBinder.FireWire(),// The wire to send the data over
+            options: options                // Any customisations you need to make
     });
 
     // Start watching for changes in the model to save!
