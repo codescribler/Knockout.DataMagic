@@ -14,13 +14,21 @@ describe("A binder", function() {
             example : ko.observable('hello')
         };
 
-
         var exclusions = [];
         binder.attach(viewModel, exclusions, function(data){
             expect(data.example).toEqual('hello');
         });
+    });
 
+    it("must reflect the value of a boolean observable", function(){
+       viewModel = {
+           yesNo : ko.observable(false)
+       }
 
+        var exclusions = [];
+        binder.attach(viewModel, exclusions, function(data){
+            expect(data.yesNo).toEqual(false);
+        });
     });
 
     it("payload must stay in sync with the viewModel observable", function(){
@@ -41,6 +49,27 @@ describe("A binder", function() {
 
         waitsFor(function(){
             return actual.example === 'hello changed';
+        });
+    });
+
+    it("payload must stay in sync with a boolean observable", function(){
+        viewModel = {
+            example : ko.observable(true)
+        };
+
+        var callBack = function(data){
+            actual = data;
+            flag = true;
+        };
+
+        runs(function(){
+            var exclusions = [];
+            binder.attach(viewModel, exclusions, callBack);
+            viewModel.example(false);
+        });
+
+        waitsFor(function(){
+            return actual.example === false;
         });
     });
 
@@ -156,7 +185,6 @@ describe("A binder", function() {
         };
 
         var callBack = function(data){
-            //expect(data.excludeMe).toEqual('hello');
             expect(data.excludeMe).not.toBeDefined();
         };
 
@@ -164,6 +192,25 @@ describe("A binder", function() {
         binder.attach(viewModel, exclusions, callBack);
         viewModel.excludeMe('hello again');
     });
+
+    it("the payload should not contain functions from the view model", function(){
+        viewModel = function(){
+            var self = this;
+            self.example = ko.observable('hello');
+            self.excludeMe = ko.observable('hello');
+
+            self.doSomething = function(){
+
+            };
+        };
+
+        var callBack = function(data){
+            expect(data.doSomething).not.toBeDefined();
+        };
+
+        var exclusions = ['excludeMe'];
+        binder.attach(new viewModel(), exclusions, callBack);
+    })
 });
 
 
