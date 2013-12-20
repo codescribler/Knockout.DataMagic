@@ -32,13 +32,42 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to DataMagic.</h3>
 
-<p>Enough of the chat, take a look at the <a href="todoDemo.html">demo</a>! This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+          <p>Knockout.DataMagic.js provides <strong>3-way data binding</strong> for knockout view models. The first version uses the fantastic service from
+              <a href="https://www.firebase.com/" target="_blank">Firebase</a> allowing you to build out your apps at light speed without having to worry
+              about a server!</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+            <p>Enough of the chat, take a look at the <a href="todoDemo.html">todo demo</a>!</p>
+
+          <p>The code is very simple. Assuming you have a Firebase end point ready to go, just chuck your view model at datamagic and watch as changes are stored
+          at your database. This is a simple example taken from the unit tests:</p>
+
+<pre><code>
+
+    // A very simple view model
+    var viewModel = {
+        name  : ko.observable('Daniel'),
+        age   : ko.observable(35)
+    };
+
+    // Tell datamagic where your firebase end point is
+    var options = {
+        baseUrl     : "http://www.example.com/"
+    };
+
+    // Initialise the provider
+    var provider = new autoBinder.Provider(
+        {
+            binder: new autoBinder.Binder(),
+            viewModel: viewModel,
+            wire: new autoBinder.FireWire(),
+            options: options
+    });
+
+    // Start watching for changes in the model to save!
+    provider.start();
+
 </code></pre>
 
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
