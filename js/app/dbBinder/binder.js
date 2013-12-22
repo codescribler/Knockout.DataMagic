@@ -39,7 +39,13 @@ autoBinder.Binder.prototype = function(){
                 doAttachment.call(this, prop, target[prop]);
                 attachExtenders.call(this,target[prop]);
             }else{
-                if(shouldTrack.call(this, prop, target)) doAttachment.call(this, prop, target[prop]);
+                if(shouldTrack.call(this, prop, target)){
+                    doAttachment.call(this, prop, target[prop]);
+                }else{
+                    if (this.exclusions.indexOf(prop) < 0) {
+                        this.exclusions.push(prop);
+                    }
+                }
             }
         }
     }
@@ -87,6 +93,8 @@ autoBinder.Binder.prototype = function(){
         ko.utils.arrayForEach(options.exclusions, function(exclude){
            delete options.payload[exclude];
         });
+
+
     };
 
     var isKnockoutArray = function(observable){
