@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467e68f2-5598-43fa-9809-134e7f5c7886" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\SpecRunner.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\lib\jasmine-1.3.0\MIT.LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\lib\jasmine-1.3.0\jasmine-html.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\lib\jasmine-1.3.0\jasmine.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\lib\jasmine-1.3.0\jasmine.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\spec\BinderSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\spec\ProviderSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\tests\spec\SpecHelper.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\css\bootstrap-theme.css" afterPath="$PROJECT_DIR$/stylesheets/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\css\bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/stylesheets/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\css\bootstrap.css" afterPath="$PROJECT_DIR$/stylesheets/bootstrap.css" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\css\bootstrap.min.css" afterPath="$PROJECT_DIR$/stylesheets/bootstrap.min.css" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\app\dbBinder\Provider.js" afterPath="$PROJECT_DIR$/javascripts/app/dbBinder/provider.js" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\app\dbBinder\binder.js" afterPath="$PROJECT_DIR$/javascripts/app/dbBinder/binder.js" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\app\dbBinder\fireWire.js" afterPath="$PROJECT_DIR$/javascripts/app/dbBinder/fireWire.js" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\bootstrap.js" afterPath="$PROJECT_DIR$/javascripts/libs/bootstrap.js" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\bootstrap.min.js" afterPath="$PROJECT_DIR$/javascripts/libs/bootstrap.min.js" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\firebase\firebase.js" afterPath="$PROJECT_DIR$/javascripts/libs/firebase/firebase.js" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\firebase\simpleLogin.js" afterPath="$PROJECT_DIR$/javascripts/libs/firebase/simpleLogin.js" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/javascripts/libs/jquery-1.10.2.min.js" />
-      <change type="MOVED" beforePath="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\js\libs\knockout-3.0.0.js" afterPath="$PROJECT_DIR$/javascripts/libs/knockout-3.0.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascripts/datamaigic/fireWire.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js" />
+      <change type="DELETED" beforePath="C:\Users\Danny\Documents\GitHub\Knockout.DataMagic\javascripts\dataMagic\datamagic.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Danny\Documents\GitHub\Knockout.DataMagic\javascripts\main.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todoDemo.html" afterPath="$PROJECT_DIR$/todoDemo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -50,34 +33,25 @@
       <file leaf-file-name="todoDemo.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoDemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="26" selection-start="612" selection-end="612" vertical-scroll-proportion="13.730769" vertical-offset="663" max-vertical-offset="4573">
+            <state line="213" column="46" selection-start="8905" selection-end="8905" vertical-scroll-proportion="-17.653847" vertical-offset="3162" max-vertical-offset="4624">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="params.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fireWire.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascripts/datamaigic/fireWire.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="params.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/params.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="977">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascripts/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="binder.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/binder.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
               <folding />
             </state>
           </provider>
@@ -86,25 +60,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="533" selection-end="533" vertical-scroll-proportion="-6.1923075" vertical-offset="60" max-vertical-offset="1445">
+            <state line="13" column="8" selection-start="533" selection-end="533" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1938">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fireWire.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/fireWire.js">
+      <file leaf-file-name="knockout-datamagic.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="provider.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/provider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
               <folding />
             </state>
           </provider>
@@ -130,6 +95,8 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/todoDemo.html" />
+        <option value="$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js" />
+        <option value="$PROJECT_DIR$/javascripts/datamaigic/fireWire.js" />
       </list>
     </option>
   </component>
@@ -137,7 +104,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
-    <option name="height" value="1176" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -165,7 +132,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,16 +192,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dbBinder" />
+              <option name="myItemId" value="datamaigic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,14 +212,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -265,6 +220,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -290,26 +253,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -324,6 +287,27 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/todoDemo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="4607">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1331" column="0" selection-start="23377" selection-end="23377" vertical-scroll-proportion="0.33267716" vertical-offset="22289" max-vertical-offset="36924">
@@ -331,51 +315,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/binder.js">
+    <entry file="file://$PROJECT_DIR$/params.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/fireWire.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/app/dbBinder/provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1016">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1016">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="533" selection-end="533" vertical-scroll-proportion="-6.1923075" vertical-offset="60" max-vertical-offset="1445">
+        <state line="13" column="8" selection-start="533" selection-end="533" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todoDemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="612" selection-end="612" vertical-scroll-proportion="13.730769" vertical-offset="663" max-vertical-offset="4573">
+        <state line="213" column="46" selection-start="8905" selection-end="8905" vertical-scroll-proportion="-17.653847" vertical-offset="3162" max-vertical-offset="4624">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/params.json">
+    <entry file="file://$PROJECT_DIR$/javascripts/datamaigic/fireWire.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
           <folding />
         </state>
       </provider>

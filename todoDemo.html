@@ -78,7 +78,8 @@
 <script src="javascripts/bootstrap.min.js" type="text/javascript"> </script>
 <script src="javascripts/knockout-3.0.0.js" type="text/javascript"> </script>
 <script src="javascripts/firebase/firebase.js" type="text/javascript"> </script>
-<script src="javascripts/dataMagic/datamagic.js" type="text/javascript"> </script>
+<script src="https://raw.github.com/codescribler/Knockout.DataMagic/master/js/app/knockout-datamagic.js" type="text/javascript"> </script>
+<script src="https://raw.github.com/codescribler/Knockout.DataMagic/master/js/app/adapters/fireWire.js" type="text/javascript"> </script>
 
 
 <script>
@@ -233,12 +234,12 @@
 
     var options = {
         baseUrl     : "https://logthis.firebaseIO.com/todos",
-        exclusions  : ["add", "getLabel", "remove", "removeCompleted", "current", "filteredTodos", "completedCount", "remainingCount", "allCompleted"],
+        exclusions  : ["current", "filteredTodos", "completedCount", "remainingCount", "allCompleted"],
         autoStart: false
     };
 
-    var binder = new autoBinder.Binder();
-    var provider = new autoBinder.Provider({binder: binder, viewModel: vm, wire: new autoBinder.FireWire(), options: options});
+    var binder = new datamagic.Binder();
+    var provider = new datamagic.Provider({binder: binder, viewModel: vm, wire: new datamagic.FireWire(), options: options});
     provider.start();
 
 
