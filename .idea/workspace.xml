@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467e68f2-5598-43fa-9809-134e7f5c7886" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Danny\Documents\GitHub\Knockout.DataMagic\javascripts\datamaigic\fireWire.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js" afterPath="$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todoDemo.html" afterPath="$PROJECT_DIR$/todoDemo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Knockout.DataMagic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="todoDemo.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todoDemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="46" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0777439" vertical-offset="204" max-vertical-offset="4777">
+            <state line="17" column="9" selection-start="393" selection-end="393" vertical-scroll-proportion="0.44054878" vertical-offset="0" max-vertical-offset="5474">
               <folding />
             </state>
           </provider>
@@ -58,7 +55,7 @@
       <file leaf-file-name="knockout-datamagic.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="0" selection-start="4599" selection-end="4599" vertical-scroll-proportion="0.0" vertical-offset="2212" max-vertical-offset="2975">
+            <state line="171" column="0" selection-start="4599" selection-end="4599" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2975">
               <folding />
             </state>
           </provider>
@@ -353,7 +350,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todoDemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="46" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0777439" vertical-offset="204" max-vertical-offset="4777">
+        <state line="17" column="9" selection-start="393" selection-end="393" vertical-scroll-proportion="0.44054878" vertical-offset="0" max-vertical-offset="5474">
           <folding />
         </state>
       </provider>

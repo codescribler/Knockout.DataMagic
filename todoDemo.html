@@ -1,11 +1,20 @@
 <html>
 <head>
     <title>todo datamagic demo</title>
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://bootswatch.com/readable/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
     <style>
         .completed{
             text-decoration: line-through;
+        }
+
+        #todo-count {
+            display: block;
+            padding: 10 15;
+        }
+
+        .active {
+            background-color: #EEE;
         }
     </style>
 </head>
@@ -13,37 +22,45 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <h1 class="text-center">todo datamagic demo</h1>
-            <p>This sample heavily borrows from the <a href="http://todomvc.com/" title="todomvc project">todomvc</a> project in order to demonstrate DataMagic in action!</p>
+        <div class="col-md-12">
+            <h1 class="text-center">datamagic demo</h1>
+            <p>The best way to see whats happening here is to open two browser windows at <a href="http://codescribler.github.io/Knockout.DataMagic/todoDemo.html" target="_blank"> this page.</a> Then add and remove items from the to do list!</p>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-                <fieldset>
-                    <div class="form-group">
-                        <input id="new-todo" class="form-control col-md-4" data-bind="value: current, valueUpdate: 'afterkeydown', enterKey: add" placeholder="What needs to be done?" autofocus>
-                    </div>
-                </fieldset>
+        <div class="well well-lg">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>To Do List Demo</h2>
+                </div>
             </div>
-        </div>
-    <div class="row" data-bind="visible: loading">
-        <div class="col-md-4 col-md-offset-4">
-            <br/>
-            <div class="well">
-                <h2>Hold on to your hat, just loading your tasks ...</h2>
-            </div>
-        </div>
-    </div>
-    <div class="row" data-bind="visible: todos().length">
-        <div class="col-md-4 col-md-offset-4">
 
-            <div class="checkbox">
-                <label>
-                    <input id="toggle-all" data-bind="checked: allCompleted" type="checkbox"> Mark all as complete
-                </label>
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset>
+                        <div class="form-group">
+                            <input id="new-todo" class="form-control col-md-4" data-bind="value: current, valueUpdate: 'afterkeydown', enterKey: add" placeholder="What needs to be done?" autofocus>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
+            <div class="row" data-bind="visible: loading">
+                <div class="col-md-12">
+                    <br/>
+                    <div class="well">
+                        <h2>Hold on to your hat, just loading your tasks ...</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-bind="visible: todos().length">
+                <div class="col-md-12">
+
+                    <div class="checkbox">
+                        <label>
+                            <input id="toggle-all" data-bind="checked: allCompleted" type="checkbox"> Mark all as complete
+                        </label>
+                    </div>
                     <ul id="todo-list" data-bind="foreach: filteredTodos">
                         <li data-bind="css: { completed: completed }">
                             <div class="checkbox">
@@ -57,29 +74,53 @@
                     </ul>
 
                     <footer id="footer" data-bind="visible: completedCount() || remainingCount()">
-				<span id="todo-count">
-					<strong data-bind="text: remainingCount">0</strong>
-					<span data-bind="text: getLabel(remainingCount)"></span> left
-				</span>
-                        <ul id="filters" class="nav nav-pills">
-                            <li>
-                                <a class="btn btn-default" data-bind="css: { active: showMode() == 'all' }, click: function(){showMode('all');}" href="#/all">All</a>
-                            </li>
-                            <li>
-                                <a class="btn btn-default" data-bind="css: { active: showMode() == 'active' }, click: function(){showMode('active');}" href="#/active">Active</a>
-                            </li>
-                            <li>
-                                <a class="btn btn-default" data-bind="css: { active: showMode() == 'completed' }, click: function(){showMode('completed');}" href="#/completed">Completed</a>
-                            </li>
-                        </ul>
-                        <button id="clear-completed" class="btn btn-warning" data-bind="visible: completedCount, click: removeCompleted">
-                            Clear completed (<span data-bind="text: completedCount"></span>)
-                        </button>
+                        <div class="col-md-3">
+
+                            <span id="todo-count">
+                                <strong data-bind="text: remainingCount">0</strong>
+                                <span data-bind="text: getLabel(remainingCount)"></span> left
+                            </span>
+
+                        </div>
+				        <div class="col-md-4 col-offset-6">
+                            <ul id="filters" class="nav nav-pills">
+                                <li>
+                                    <a class="" data-bind="css: { active: showMode() == 'all' }, click: function(){showMode('all');}" href="#/all">All</a>
+                                </li>
+                                <li>
+                                    <a class="" data-bind="css: { active: showMode() == 'active' }, click: function(){showMode('active');}" href="#/active">Active</a>
+                                </li>
+                                <li>
+                                    <a class="" data-bind="css: { active: showMode() == 'completed' }, click: function(){showMode('completed');}" href="#/completed">Completed</a>
+                                </li>
+                            </ul>
+                            <button id="clear-completed" class="btn btn-warning" data-bind="visible: completedCount, click: removeCompleted">
+                                Clear completed (<span data-bind="text: completedCount"></span>)
+                            </button>
+                        </div>
                     </footer>
 
                 </div>
+            </div>
+
+
+        </div>
     </div>
 
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">What is actually happening here?</h3>
+            <div class="col-md-6">
+                <img src="images/datamagic.jpg" class="img-responsive" title="How datamagic works" alt="datamagic flow">
+            </div>
+            <div class="col-md-6">
+                <p> The live sync bit is provided by Firebase, a real time database and the view binding by knockout.
+                    DataMagic watches for changes to the model and pumps them up to Firebase who then syncs up between clients. Simple!</p>
+                <p>This sample heavily borrows from the <a href="http://todomvc.com/" title="todomvc project">todomvc</a> project in order to demonstrate DataMagic in action!</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="javascripts/jquery-1.10.2.min.js" type="text/javascript"> </script>
@@ -241,7 +282,7 @@
     ko.applyBindings(vm);
 
     var options = {
-        baseUrl     : "https://logthis.firebaseIO.com/todos",
+        baseUrl     : "https://datamagic.firebaseIO.com/todos",
         exclusions  : ["current", "filteredTodos", "completedCount", "remainingCount", "allCompleted", "loading"],
         autoStart: false
     };
@@ -255,12 +296,12 @@
     dataRef.on('value', function(snapshot) {
         //alert(snapshot.val());
         var model = snapshot.val();
+        vm.loading(false);
         provider.stop();
         if(model) {
             vm.showMode(model.showMode || "All");
             if(model.todos){
                 vm.todos(model.todos.map(function (todo) {
-                    vm.loading(false);
                     return new Todo(todo.title, todo.completed);
                 }));
             }
