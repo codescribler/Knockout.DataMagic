@@ -6,7 +6,7 @@ describe("A binder", function() {
 
     beforeEach(function() {
         flag = false;
-        binder = new autoBinder.Binder();
+        binder = new datamagic.Binder();
     });
 
     it("must reflect the value of a view model with only one observable", function(){

@@ -2,21 +2,8 @@
  * Created by Danny on 11/12/13.
  */
 
-var autoBinder = autoBinder || {};
+var datamagic = datamagic || {};
 
-//autoBinder.FakeWire = function(){
-//    var self = this;
-//    self.basePath = '';
-//    self.model  = {};
-//
-//    self.init = function(options){
-//        self.basePath = options.baseUrl;
-//    };
-//
-//    self.saveData = function(data){
-//        self.model = data;
-//    };
-//};
 
 describe("A persistence provider", function(){
     var provider;
@@ -31,9 +18,9 @@ describe("A persistence provider", function(){
             baseUrl     : "http://www.example.com/",
             autoStart: true
         };
-        binder  = new autoBinder.Binder();
+        binder  = new datamagic.Binder();
 
-        wire    = new autoBinder.FireWire();
+        wire    = new datamagic.FireWire();
         spyOn(wire, 'saveData');
         spyOn(wire, 'init');
         wire.saveData.reset()
@@ -43,7 +30,7 @@ describe("A persistence provider", function(){
           age   : ko.observable(35)
         };
 
-        provider = new autoBinder.Provider({binder: binder, viewModel: viewModel, wire: wire, options: options});
+        provider = new datamagic.dm({binder: binder, viewModel: viewModel, wire: wire, options: options});
     });
 
     it("must initialise the wire", function(){
@@ -75,9 +62,9 @@ describe("A persistence provider with exclusions and not autoStarted", function(
             baseUrl     : "http://www.example.com/",
             exclusions  : ["lastName", "age"]
         };
-        binder  = new autoBinder.Binder();
+        binder  = new datamagic.Binder();
 
-        wire    = new autoBinder.FireWire();
+        wire    = new datamagic.FireWire();
         spyOn(wire, 'saveData');
         spyOn(wire, 'init');
         wire.saveData.reset()
@@ -88,7 +75,7 @@ describe("A persistence provider with exclusions and not autoStarted", function(
             age   : ko.observable(35)
         };
 
-        provider = new autoBinder.Provider({binder: binder, viewModel: viewModel, wire: wire, options: options});
+        provider = new datamagic.dm({binder: binder, viewModel: viewModel, wire: wire, options: options});
     });
 
     it("will call initialise when started", function(){
@@ -101,5 +88,4 @@ describe("A persistence provider with exclusions and not autoStarted", function(
         viewModel.age(36);
         expect(wire.saveData.callCount).toEqual(0);
     });
-
 });

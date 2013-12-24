@@ -1,18 +1,17 @@
 /**
- * Created by daniel.whittaker on 30/10/13.
+ * Created by Danny on 24/12/13.
  */
+var datamagic = datamagic || {};
 
-var autoBinder = autoBinder || {};
-
-autoBinder.Binder = function(){
-   // Private members
+datamagic.Binder = function(){
+    // Private members
     this.payload = {};
     this.callBack = {};
     this.viewModel = {};
     this.exclusions = [];
 };
 
-autoBinder.Binder.prototype = function(){
+datamagic.Binder.prototype = function(){
     var attach = function(viewModel, exclusions, callBack){
         this.viewModel = viewModel;
         this.callBack = callBack;
@@ -91,10 +90,8 @@ autoBinder.Binder.prototype = function(){
 
     var cleanPayload = function(options){
         ko.utils.arrayForEach(options.exclusions, function(exclude){
-           delete options.payload[exclude];
+            delete options.payload[exclude];
         });
-
-
     };
 
     var isKnockoutArray = function(observable){
@@ -105,3 +102,42 @@ autoBinder.Binder.prototype = function(){
         attach : attach
     };
 }();
+
+// Provider co-ordinates the interactions between the binder and the data persistence source
+datamagic.dm = function(parameters){
+    var self = this;
+    self.binder = parameters.binder;
+    self.viewModel = parameters.viewModel;
+    self.wire = parameters.wire;
+    self.options = parameters.options;
+    self.active = parameters.options.autoStart || false;
+    self.initialised = false;
+
+    self.init = function(){
+        self.wire.init(self.options);
+        self.binder.attach(self.viewModel, self.options.exclusions || [], self.receiveUpdate);
+        self.initialised = true;
+    };
+
+    self.start = function(){
+        if(!self.initialised) self.init();
+        self.active = true;
+    };
+
+    self.stop = function(){
+        self.active = false;
+    };
+
+    self.receiveUpdate = function(data){
+        if(self.active) self.wire.saveData(data);
+    };
+
+    if(self.active){
+        self.init();
+    }
+
+    return{
+        start   : self.start,
+        stop    : self.stop
+    }
+};
