@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="todoDemo.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="todoDemo.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todoDemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="0" selection-start="6475" selection-end="6475" vertical-scroll-proportion="-5.230769" vertical-offset="2380" max-vertical-offset="3094">
+            <state line="158" column="26" selection-start="6838" selection-end="6838" vertical-scroll-proportion="0.46646342" vertical-offset="2380" max-vertical-offset="3094">
               <folding />
             </state>
           </provider>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="knockout-datamagic.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="knockout-datamagic.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="20" selection-start="4469" selection-end="4469" vertical-scroll-proportion="0.09496403" vertical-offset="2246" max-vertical-offset="3451">
+            <state line="74" column="25" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="3451">
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -209,6 +209,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -217,14 +225,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -384,19 +384,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todoDemo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="0" selection-start="6475" selection-end="6475" vertical-scroll-proportion="-5.230769" vertical-offset="2380" max-vertical-offset="3094">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="20" selection-start="4469" selection-end="4469" vertical-scroll-proportion="0.09496403" vertical-offset="2246" max-vertical-offset="3451">
+        <state line="74" column="25" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="3451">
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todoDemo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="26" selection-start="6838" selection-end="6838" vertical-scroll-proportion="0.46646342" vertical-offset="2380" max-vertical-offset="3094">
+          <folding />
         </state>
       </provider>
     </entry>

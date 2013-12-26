@@ -72,7 +72,7 @@ datamagic.Binder.prototype = function(){
                 cleanPayload : cleanPayload,
                 exclusions : this.exclusions
             };
-            observable.extend({logChange : options });
+            observable = observable.extend({logChange : options });
         }
     };
 
