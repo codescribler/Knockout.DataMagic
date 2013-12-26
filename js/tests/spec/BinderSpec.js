@@ -280,6 +280,48 @@ describe("A binder", function() {
         });
     });
 
+    it('payload must track changes within complex objects added to arrays after attach and after mutiple updates', function(){
+        var ComplexItem = function (title, completed) {
+            this.title = ko.observable(title);
+            this.completed = ko.observable(completed || false);
+        };
+
+        viewModel = {
+            list : ko.observableArray([
+                new ComplexItem("One", false)
+
+            ])
+        };
+
+        var callBack = function(data){
+            actual = data;
+        };
+
+        runs(function(){
+            var exclusions = [];
+            binder.attach(viewModel, exclusions, callBack);
+            viewModel.list.push(new ComplexItem("Two", true));
+            viewModel.list.push(new ComplexItem("Three", true));
+            viewModel.list()[1].completed(false);
+            viewModel.list()[2].completed(false);
+        });
+
+        waitsFor(function(){
+            var expected = {
+                list: [
+                    { title: "One", completed : false },
+                    { title: "Two", completed : false },
+                    { title: "Three", completed : false }
+                ]
+            }
+
+            var one = JSON.stringify(actual).replace(/(\\t|\\n)/g,''),
+                two = JSON.stringify(expected).replace(/(\\t|\\n)/g,'');
+
+            return one === two;
+        });
+    });
+
     it("binder should not track changes to properites in the exclusion list", function(){
         viewModel = {
             example : ko.observable('hello'),

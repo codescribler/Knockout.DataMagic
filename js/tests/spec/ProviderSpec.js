@@ -7,7 +7,6 @@ var datamagic = datamagic || {};
 
 describe("A persistence provider", function(){
     var provider;
-    var binder;
     var viewModel;
     var wire;
     var options;
@@ -18,11 +17,9 @@ describe("A persistence provider", function(){
             baseUrl     : "http://www.example.com/",
             autoStart: true
         };
-        binder  = new datamagic.Binder();
-
-        wire    = new datamagic.FireWire();
+        wire    = new datamagic.FireWire(options);
         spyOn(wire, 'saveData');
-        spyOn(wire, 'init');
+
         wire.saveData.reset()
 
         viewModel = {
@@ -31,14 +28,10 @@ describe("A persistence provider", function(){
           alive: ko.observable(false)
         };
 
-        provider = new datamagic.dm({binder: binder, viewModel: viewModel, wire: wire, options: options});
+        provider = new datamagic.dm({viewModel: viewModel, wire: wire, options: options});
     });
 
-    it("must initialise the wire", function(){
-        expect(wire.init).toHaveBeenCalledWith({ baseUrl : 'http://www.example.com/', autoStart: true });
-    });
-
-    it("must save a model on change", function(){
+        it("must save a model on change", function(){
         viewModel.name('Daniel Whittaker');
         expect(wire.saveData).toHaveBeenCalledWith({ name : 'Daniel Whittaker', age : 35, alive : false });
     });
@@ -64,7 +57,6 @@ describe("A persistence provider", function(){
 
 describe("A persistence provider with exclusions and not autoStarted", function(){
     var provider;
-    var binder;
     var viewModel;
     var wire;
     var options;
@@ -75,11 +67,10 @@ describe("A persistence provider with exclusions and not autoStarted", function(
             baseUrl     : "http://www.example.com/",
             exclusions  : ["lastName", "age"]
         };
-        binder  = new datamagic.Binder();
+        wire    = new datamagic.FireWire(options);
 
-        wire    = new datamagic.FireWire();
         spyOn(wire, 'saveData');
-        spyOn(wire, 'init');
+
         wire.saveData.reset()
 
         viewModel = {
@@ -88,12 +79,13 @@ describe("A persistence provider with exclusions and not autoStarted", function(
             age   : ko.observable(35)
         };
 
-        provider = new datamagic.dm({binder: binder, viewModel: viewModel, wire: wire, options: options});
+        provider = new datamagic.dm({viewModel: viewModel, wire: wire, options: options});
     });
 
-    it("will call initialise when started", function(){
+    it("will call saveData when started", function(){
         provider.start();
-        expect(wire.init).toHaveBeenCalledWith({ baseUrl : 'http://www.example.com/', exclusions  : ["lastName", "age"] });
+        viewModel.firstName('Bill');
+        expect(wire.saveData.callCount).toEqual(1);
     });
 
     it("when started will not call saveData on change of excluded field", function(){

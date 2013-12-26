@@ -2,16 +2,11 @@
  * Created by Danny on 13/12/13.
  */
 
-datamagic.FireWire = function(){
+datamagic.FireWire = function(options){
     var self = this;
-    self.basePath = '';
+    self.basePath = options.baseUrl || "";
     self.model  = {};
-    self.localRef = {};
-
-    self.init = function(options){
-        self.basePath = options.baseUrl;
-        self.localRef = new Firebase(self.basePath);
-    };
+    self.localRef = new Firebase(self.basePath);
 
     self.saveData = function(data){
         self.model = data;

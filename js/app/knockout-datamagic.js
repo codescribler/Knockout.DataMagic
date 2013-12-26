@@ -138,7 +138,7 @@ datamagic.Binder.prototype = function(){
 // Provider co-ordinates the interactions between the binder and the data persistence source
 datamagic.dm = function(parameters){
     var self = this;
-    self.binder = parameters.binder;
+    self.binder = parameters.binder || new datamagic.Binder();
     self.viewModel = parameters.viewModel;
     self.wire = parameters.wire;
     self.options = parameters.options;
@@ -146,7 +146,7 @@ datamagic.dm = function(parameters){
     self.initialised = false;
 
     self.init = function(){
-        self.wire.init(self.options);
+        //self.wire.init(self.options);
         self.binder.attach(self.viewModel, self.options.exclusions || [], self.receiveUpdate);
         self.initialised = true;
     };
