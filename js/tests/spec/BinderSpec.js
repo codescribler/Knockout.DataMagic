@@ -87,7 +87,7 @@ describe("A binder", function() {
         binder.attach(viewModel, exclusions, callBack);
         viewModel.example('hello');
 
-        expect(count).toEqual(1);
+        expect(count).toEqual(0);
     });
 
     it("payload must stay in sync with a viewModel with multiple observables", function(){
@@ -238,6 +238,45 @@ describe("A binder", function() {
 
         waitsFor(function(){
             return actual.list[0].completed === true;
+        });
+    });
+
+    it('payload must track changes within complex objects added to arrays after attach', function(){
+        var ComplexItem = function (title, completed) {
+            this.title = ko.observable(title);
+            this.completed = ko.observable(completed || false);
+        };
+
+        viewModel = {
+            list : ko.observableArray([
+                new ComplexItem("One", false)
+
+            ])
+        };
+
+        var callBack = function(data){
+            actual = data;
+        };
+
+        runs(function(){
+            var exclusions = [];
+            binder.attach(viewModel, exclusions, callBack);
+            viewModel.list.push(new ComplexItem("Two", true));
+            viewModel.list()[1].completed(false);
+        });
+
+        waitsFor(function(){
+            var expected = {
+                list: [
+                    { title: "One", completed : false },
+                    { title: "Two", completed : false }
+                ]
+            }
+
+            var one = JSON.stringify(actual).replace(/(\\t|\\n)/g,''),
+                two = JSON.stringify(expected).replace(/(\\t|\\n)/g,'');
+
+            return one === two;
         });
     });
 

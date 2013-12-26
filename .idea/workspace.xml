@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="467e68f2-5598-43fa-9809-134e7f5c7886" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/tests/spec/BinderSpec.js" afterPath="$PROJECT_DIR$/js/tests/spec/BinderSpec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/tests/spec/ProviderSpec.js" afterPath="$PROJECT_DIR$/js/tests/spec/ProviderSpec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/knockout-datamagic.js" afterPath="$PROJECT_DIR$/js/app/knockout-datamagic.js" />
     </list>
     <ignored path="Knockout.DataMagic.iws" />
@@ -26,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="todoDemo.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="todoDemo.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todoDemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="4" selection-start="6231" selection-end="6426" vertical-scroll-proportion="-7.730769" vertical-offset="2162" max-vertical-offset="4573">
+            <state line="145" column="26" selection-start="6454" selection-end="6454" vertical-scroll-proportion="0.46189025" vertical-offset="2162" max-vertical-offset="4573">
               <folding />
             </state>
           </provider>
@@ -38,16 +39,16 @@
       <file leaf-file-name="SpecRunner.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/tests/SpecRunner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="74" selection-start="954" selection-end="954" vertical-scroll-proportion="-6.5384617" vertical-offset="136" max-vertical-offset="1071">
+            <state line="18" column="74" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1071">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="knockout-datamagic.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="knockout-datamagic.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app/knockout-datamagic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="9" selection-start="2677" selection-end="2677" vertical-scroll-proportion="0.95107913" vertical-offset="784" max-vertical-offset="3043">
+            <state line="19" column="58" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="3043">
               <folding />
             </state>
           </provider>
@@ -56,7 +57,7 @@
       <file leaf-file-name="BinderSpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/tests/spec/BinderSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="40" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="5729">
+            <state line="327" column="20" selection-start="9095" selection-end="9101" vertical-scroll-proportion="-8.92" vertical-offset="5336" max-vertical-offset="6392">
               <folding />
             </state>
           </provider>
@@ -65,7 +66,7 @@
       <file leaf-file-name="ProviderSpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/tests/spec/ProviderSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="49" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="1887">
+            <state line="60" column="49" selection-start="1880" selection-end="1880" vertical-scroll-proportion="-15.04" vertical-offset="644" max-vertical-offset="1887">
               <folding />
             </state>
           </provider>
@@ -94,8 +95,8 @@
         <option value="$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js" />
         <option value="$PROJECT_DIR$/javascripts/todo-viewmodel.js" />
         <option value="$PROJECT_DIR$/todoDemo.html" />
-        <option value="$PROJECT_DIR$/js/tests/spec/ProviderSpec.js" />
         <option value="$PROJECT_DIR$/js/tests/spec/BinderSpec.js" />
+        <option value="$PROJECT_DIR$/js/tests/spec/ProviderSpec.js" />
         <option value="$PROJECT_DIR$/js/app/knockout-datamagic.js" />
       </list>
     </option>
@@ -239,14 +240,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -255,6 +248,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -314,6 +315,34 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/tests/SpecRunner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="74" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/knockout-datamagic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="9" selection-start="2677" selection-end="2677" vertical-scroll-proportion="0.0" vertical-offset="784" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tests/spec/BinderSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="40" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="5729">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tests/spec/ProviderSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="49" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/todoDemo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="0" selection-start="4008" selection-end="4008" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4573">
@@ -361,37 +390,37 @@
         <state line="1331" column="0" selection-start="23377" selection-end="23377" vertical-scroll-proportion="0.33267716" vertical-offset="22289" max-vertical-offset="36924" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/tests/spec/ProviderSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="49" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="1887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todoDemo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="4" selection-start="6231" selection-end="6426" vertical-scroll-proportion="-7.730769" vertical-offset="2162" max-vertical-offset="4573">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/tests/SpecRunner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="74" selection-start="954" selection-end="954" vertical-scroll-proportion="-6.5384617" vertical-offset="136" max-vertical-offset="1071">
+        <state line="18" column="74" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/tests/spec/BinderSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="40" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="5729">
+        <state line="327" column="20" selection-start="9095" selection-end="9101" vertical-scroll-proportion="-8.92" vertical-offset="5336" max-vertical-offset="6392">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tests/spec/ProviderSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="49" selection-start="1880" selection-end="1880" vertical-scroll-proportion="-15.04" vertical-offset="644" max-vertical-offset="1887">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app/knockout-datamagic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="9" selection-start="2677" selection-end="2677" vertical-scroll-proportion="0.95107913" vertical-offset="784" max-vertical-offset="3043">
+        <state line="19" column="58" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todoDemo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="26" selection-start="6454" selection-end="6454" vertical-scroll-proportion="0.46189025" vertical-offset="2162" max-vertical-offset="4573">
           <folding />
         </state>
       </provider>

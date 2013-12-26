@@ -46,7 +46,7 @@ describe("A persistence provider", function(){
     it("when stopped should stop saving changes", function(){
         provider.stop();
         viewModel.name('Daniel Whittaker');
-        expect(wire.saveData.callCount).toEqual(1); // It's 1 because on provider creation, autoStart is true
+        expect(wire.saveData.callCount).toEqual(0);
     });
 
     it("should trigger a save when a boolean observable is set to true", function(){
@@ -58,7 +58,7 @@ describe("A persistence provider", function(){
         viewModel.alive(true);
         viewModel.alive(false);
         expect(wire.saveData).toHaveBeenCalledWith({ name : 'Daniel', age : 35, alive : true });
-        expect(wire.saveData.callCount).toEqual(3);
+        expect(wire.saveData.callCount).toEqual(2);
     });
 });
 
