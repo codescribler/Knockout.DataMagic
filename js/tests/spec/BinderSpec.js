@@ -178,6 +178,69 @@ describe("A binder", function() {
         });
     });
 
+    it('payload must not include excluded properties from within complex objects in observables within an array', function(){
+        var ComplexItem = function (title, completed) {
+            this.title = ko.observable(title);
+            this.completed = ko.observable(completed || false);
+        };
+
+        viewModel = {
+            list : ko.observableArray([])
+        };
+
+        var callBack = function(data){
+            actual = data;
+        };
+
+        runs(function(){
+            var exclusions = [];
+            binder.attach(viewModel, ['title'], callBack);
+            viewModel.list.push(new ComplexItem("Title", true));
+        });
+
+        waitsFor(function(){
+            var expected = {
+                list: [
+                    { completed : true }
+                ]
+            }
+
+            var one = JSON.stringify(actual).replace(/(\\t|\\n)/g,''),
+                two = JSON.stringify(expected).replace(/(\\t|\\n)/g,'');
+
+            return one === two;
+        });
+    });
+
+    it('payload must track changes within complex objects with observables within an array', function(){
+        var ComplexItem = function (title, completed) {
+            this.title = ko.observable(title);
+            this.completed = ko.observable(completed || false);
+        };
+
+        viewModel = {
+            list : ko.observableArray([
+                new ComplexItem("One", false),
+                new ComplexItem("Two", true),
+                new ComplexItem("Three", false)
+            ])
+        };
+
+        var callBack = function(data){
+            actual = data;
+        };
+
+        runs(function(){
+            var exclusions = [];
+            binder.attach(viewModel, exclusions, callBack);
+            viewModel.list()[0].completed(true);
+        });
+
+        waitsFor(function(){
+            return actual.list[0].completed === true;
+        });
+    });
+
     it("binder should not track changes to properites in the exclusion list", function(){
         viewModel = {
             example : ko.observable('hello'),
