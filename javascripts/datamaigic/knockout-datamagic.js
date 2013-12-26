@@ -36,10 +36,19 @@ datamagic.Binder.prototype = function(){
     var attachExtenders = function(obj, exclusions){
         var target = obj.extend ? obj() : obj;
         exclusions = exclusions || [];
+
+        if(Object.prototype.toString.call( target ) === '[object Array]'){
+            for(var i = 0; i < target.length; i++) {
+                doAttachment.call(this, prop, target[i]);
+                attachExtenders.call(this,target[i], exclusions);
+            }
+        }
+
         for(var prop in target){
             if(isKnockoutArray(target[prop])){
                 doAttachment.call(this, prop, target[prop]);
-                attachExtenders.call(this,target[prop]);
+                attachExtenders.call(this,target[prop](), exclusions);
+                //attachExtenders.call(this,target[prop]);
             }else{
                 if(shouldTrack.call(this, prop, target)){
                     doAttachment.call(this, prop, target[prop]);
@@ -66,16 +75,18 @@ datamagic.Binder.prototype = function(){
     };
 
     var doAttachment = function(propertyName, observable){
-        var options = {
-            name : propertyName,
-            payload : this.payload,
-            callBack : this.callBack,
-            viewModel : this.viewModel,
-            hydratePayload : hydratePayload,
-            cleanPayload : cleanPayload,
-            exclusions : this.exclusions
-        };
-        observable.extend({logChange : options });
+        if(observable.extend){
+            var options = {
+                name : propertyName,
+                payload : this.payload,
+                callBack : this.callBack,
+                viewModel : this.viewModel,
+                hydratePayload : hydratePayload,
+                cleanPayload : cleanPayload,
+                exclusions : this.exclusions
+            };
+            observable.extend({logChange : options });
+        }
     };
 
     ko.extenders.logChange = function(target, options){
@@ -92,9 +103,29 @@ datamagic.Binder.prototype = function(){
     };
 
     var cleanPayload = function(options){
-        ko.utils.arrayForEach(options.exclusions, function(exclude){
-            delete options.payload[exclude];
+        options.payload = deepCleanPayload(options.payload, options.exclusions);
+    };
+
+    var deepCleanPayload = function(target, exclusions){
+        for(var prop in target){
+            if(Object.prototype.toString.call( target[prop] ) === '[object Array]'){
+                for(var i = 0; i < target[prop].length; i++) {
+                    target[prop][i] = deepCleanPayload.call(this,target[prop][i], exclusions);
+                }
+            }
+        }
+        target = removeExcludedProperties(target, exclusions);
+
+
+        return target;
+    };
+
+    var removeExcludedProperties = function(target, exclusions){
+        ko.utils.arrayForEach(exclusions, function(exclude){
+            delete target[exclude];
         });
+
+        return target;
     };
 
     var isKnockoutArray = function(observable){
