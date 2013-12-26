@@ -112,7 +112,7 @@ datamagic.Binder.prototype = function(){
                 }
             }
         }
-            target = removeExcludedProperties(target, exclusions);
+        target = removeExcludedProperties(target, exclusions);
 
 
         return target;
