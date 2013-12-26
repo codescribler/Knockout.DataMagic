@@ -27,7 +27,8 @@ describe("A persistence provider", function(){
 
         viewModel = {
           name  : ko.observable('Daniel'),
-          age   : ko.observable(35)
+          age   : ko.observable(35),
+          alive: ko.observable(false)
         };
 
         provider = new datamagic.dm({binder: binder, viewModel: viewModel, wire: wire, options: options});
@@ -39,13 +40,25 @@ describe("A persistence provider", function(){
 
     it("must save a model on change", function(){
         viewModel.name('Daniel Whittaker');
-        expect(wire.saveData).toHaveBeenCalledWith({ name : 'Daniel Whittaker', age : 35 });
+        expect(wire.saveData).toHaveBeenCalledWith({ name : 'Daniel Whittaker', age : 35, alive : false });
     });
 
     it("when stopped should stop saving changes", function(){
         provider.stop();
         viewModel.name('Daniel Whittaker');
         expect(wire.saveData.callCount).toEqual(1); // It's 1 because on provider creation, autoStart is true
+    });
+
+    it("should trigger a save when a boolean observable is set to true", function(){
+        viewModel.alive(true);
+        expect(wire.saveData).toHaveBeenCalledWith({ name : 'Daniel', age : 35, alive : true });
+    });
+
+    it("should trigger a save when a boolean observable is set to false", function(){
+        viewModel.alive(true);
+        viewModel.alive(false);
+        expect(wire.saveData).toHaveBeenCalledWith({ name : 'Daniel', age : 35, alive : true });
+        expect(wire.saveData.callCount).toEqual(3);
     });
 });
 
@@ -89,3 +102,4 @@ describe("A persistence provider with exclusions and not autoStarted", function(
         expect(wire.saveData.callCount).toEqual(0);
     });
 });
+

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467e68f2-5598-43fa-9809-134e7f5c7886" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/tests/spec/ProviderSpec.js" afterPath="$PROJECT_DIR$/js/tests/spec/ProviderSpec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Knockout.DataMagic.iws" />
@@ -28,8 +29,10 @@
       <file leaf-file-name="todoDemo.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoDemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="233" column="67" selection-start="9636" selection-end="9636" vertical-scroll-proportion="-11.230769" vertical-offset="3669" max-vertical-offset="4573">
-              <folding />
+            <state line="84" column="0" selection-start="4008" selection-end="4008" vertical-scroll-proportion="-9.038462" vertical-offset="1193" max-vertical-offset="4573">
+              <folding>
+                <marker date="1388048471061" expanded="true" signature="3988:10388" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,7 +40,7 @@
       <file leaf-file-name="SpecRunner.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/tests/SpecRunner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="77" selection-start="763" selection-end="763" vertical-scroll-proportion="-1.3076923" vertical-offset="204" max-vertical-offset="1071">
+            <state line="8" column="77" selection-start="404" selection-end="404" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1071">
               <folding />
             </state>
           </provider>
@@ -46,48 +49,17 @@
       <file leaf-file-name="BinderSpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/tests/spec/BinderSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="61" selection-start="5780" selection-end="5780" vertical-scroll-proportion="0.0" vertical-offset="2926" max-vertical-offset="4658">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4658">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProviderSpec.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ProviderSpec.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/tests/spec/ProviderSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="28" selection-start="1928" selection-end="1928" vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="1632">
+            <state line="60" column="49" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.9509379" vertical-offset="361" max-vertical-offset="1887">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="knockout-datamagic.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app/knockout-datamagic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="12" selection-start="3125" selection-end="3127" vertical-scroll-proportion="-7.48" vertical-offset="1581" max-vertical-offset="2482">
-              <folding>
-                <element signature="e#0#40#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fireWire.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app/adapters/fireWire.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="42" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consoleWire.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/app/adapters/consoleWire.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="8" selection-start="354" selection-end="354" vertical-scroll-proportion="0.36796537" vertical-offset="0" max-vertical-offset="693">
-              <folding>
-                <element signature="e#0#40#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -110,16 +82,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/tests/spec/BinderSpec.js" />
-        <option value="$PROJECT_DIR$/js/app/dbBinder/binder.js" />
-        <option value="$PROJECT_DIR$/js/app/dbBinder/Provider.js" />
-        <option value="$PROJECT_DIR$/js/tests/SpecRunner.html" />
-        <option value="$PROJECT_DIR$/js/tests/spec/ProviderSpec.js" />
-        <option value="$PROJECT_DIR$/js/app/knockout-datamagic.js" />
-        <option value="$PROJECT_DIR$/js/app/adapters/fireWire.js" />
-        <option value="$PROJECT_DIR$/js/app/adapters/datamagic.ConsoleWire.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/javascripts/datamaigic/fireWire.js" />
+        <option value="$PROJECT_DIR$/javascripts/datamaigic/knockout-datamagic.js" />
+        <option value="$PROJECT_DIR$/javascripts/todo-viewmodel.js" />
         <option value="$PROJECT_DIR$/todoDemo.html" />
-        <option value="$PROJECT_DIR$/js/app/adapters/consoleWire.js" />
+        <option value="$PROJECT_DIR$/js/tests/spec/ProviderSpec.js" />
       </list>
     </option>
   </component>
@@ -155,6 +123,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,63 +195,20 @@
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout.DataMagic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout.DataMagic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout.DataMagic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout.DataMagic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Danny\Documents\GitHub\Knockout.DataMagic\js\app\adapters" />
+      <recent name="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\stylesheets" />
+      <recent name="C:\Users\daniel.whittaker\Desktop\GitHub\Knockout.DataMagic\javascripts" />
     </key>
   </component>
   <component name="RunManager">
@@ -302,13 +228,6 @@
       <option name="filePath" />
       <option name="scope" value="ALL" />
       <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="" />
-      <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="CHROME" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -340,9 +259,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984147" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -351,6 +269,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -370,43 +289,19 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/todoDemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4590">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tests/SpecRunner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tests/spec/BinderSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="61" selection-start="5781" selection-end="5781" vertical-scroll-proportion="0.0" vertical-offset="2926" max-vertical-offset="4658">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/adapters/fireWire.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
-          <folding />
+        <state line="213" column="46" selection-start="8905" selection-end="8905" vertical-scroll-proportion="0.0" vertical-offset="3162" max-vertical-offset="4624">
+          <folding>
+            <marker date="1388048471061" expanded="true" signature="3988:10388" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todoDemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4590">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/adapters/fireWire.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
-          <folding />
+        <state line="18" column="14" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="4607">
+          <folding>
+            <marker date="1388048471061" expanded="true" signature="3988:10388" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -415,56 +310,33 @@
         <state line="1331" column="0" selection-start="23377" selection-end="23377" vertical-scroll-proportion="0.33267716" vertical-offset="22289" max-vertical-offset="36924" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/tests/spec/BinderSpec.js">
+    <entry file="file://$PROJECT_DIR$/todoDemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="61" selection-start="5780" selection-end="5780" vertical-scroll-proportion="0.0" vertical-offset="2926" max-vertical-offset="4658">
-          <folding />
+        <state line="84" column="0" selection-start="4008" selection-end="4008" vertical-scroll-proportion="-9.038462" vertical-offset="1193" max-vertical-offset="4573">
+          <folding>
+            <marker date="1388048471061" expanded="true" signature="3988:10388" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/tests/SpecRunner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="77" selection-start="763" selection-end="763" vertical-scroll-proportion="-1.3076923" vertical-offset="204" max-vertical-offset="1071">
+        <state line="8" column="77" selection-start="404" selection-end="404" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/knockout-datamagic.js">
+    <entry file="file://$PROJECT_DIR$/js/tests/spec/BinderSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="12" selection-start="3125" selection-end="3127" vertical-scroll-proportion="-7.48" vertical-offset="1581" max-vertical-offset="2482">
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4658">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/tests/spec/ProviderSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="28" selection-start="1928" selection-end="1928" vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="1632">
+        <state line="60" column="49" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.9509379" vertical-offset="361" max-vertical-offset="1887">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/adapters/fireWire.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="42" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todoDemo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="67" selection-start="9636" selection-end="9636" vertical-scroll-proportion="-11.230769" vertical-offset="3669" max-vertical-offset="4573">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/adapters/consoleWire.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="354" selection-end="354" vertical-scroll-proportion="0.36796537" vertical-offset="0" max-vertical-offset="693">
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
