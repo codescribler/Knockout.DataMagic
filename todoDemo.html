@@ -123,11 +123,12 @@
     </div>
 </div>
 
-<script src="javascripts/jquery-1.10.2.min.js" type="text/javascript"> </script>
-<script src="javascripts/bootstrap.min.js" type="text/javascript"> </script>
-<script src="javascripts/knockout-3.0.0.js" type="text/javascript"> </script>
-<script src="javascripts/firebase/firebase.js" type="text/javascript"> </script>
-<script src="javascripts/datamaigic/knockout-datamagic.js" type="text/javascript"> </script>
+<script src="javascripts/libs/jquery-1.10.2.min.js" type="text/javascript"> </script>
+<script src="javascripts/libs/bootstrap.min.js" type="text/javascript"> </script>
+<script src="javascripts/libs/knockout-3.0.0.js" type="text/javascript"> </script>
+<script src="javascripts/libs/firebase/firebase.js" type="text/javascript"> </script>
+<script src="javascripts/app/knockout-datamagic.js" type="text/javascript"> </script>
+<script src="javascripts/app/adapters/fireWire.js" type="text/javascript"> </script>
 
 <!-- This view model -->
 <script src="javascripts/todo-viewmodel.js" type="text/javascript"> </script>
@@ -143,12 +144,11 @@
 
     var options = {
         baseUrl     : "https://datamagic.firebaseIO.com/todos",
-        exclusions  : ["current", "filteredTodos", "completedCount", "remainingCount", "allCompleted", "loading"],
-        autoStart: false
+        exclusions  : ["current", "filteredTodos", "completedCount",  "allCompleted", "loading"]
     };
 
     var binder = new datamagic.Binder();
-    var dm = new datamagic.dm({binder: binder, viewModel: vm, wire: new datamagic.FireWire(), options: options});
+    var dm = new datamagic.dm({viewModel: vm, wire: new datamagic.FireWire(options), options: options});
     dm.start();
 
 
