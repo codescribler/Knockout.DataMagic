@@ -1,9 +1,6 @@
 /**
  * Created by Danny on 24/12/13.
  */
-/**
- * Created by Danny on 24/12/13.
- */
 var datamagic = datamagic || {};
 
 datamagic.Binder = function(){
@@ -21,16 +18,6 @@ datamagic.Binder.prototype = function(){
         this.exclusions = exclusions;
 
         attachExtenders.call(this, viewModel, exclusions);
-
-        var options = {
-            payload : this.payload,
-            callBack : this.callBack,
-            viewModel : this.viewModel,
-            exclusions : this.exclusions,
-            cleanPayload : cleanPayload
-        };
-
-        hydratePayload(options);
     };
 
     var attachExtenders = function(obj, exclusions){
@@ -90,10 +77,20 @@ datamagic.Binder.prototype = function(){
     };
 
     ko.extenders.logChange = function(target, options){
-        var self = this;
-        target.subscribe(function(newValue){
-            options.hydratePayload(options);
-        });
+        if(isKnockoutArray(target)){
+            target.subscribe(function(changes){
+                if(changes[0].status === "added"){
+                    // Seems a bit excessive - could cause a performance issue here
+                    // TODO: Work out how to bind to changes in the new object
+                    attach(options.viewModel, options.exclusions,options.callBack);
+                }
+                options.hydratePayload(options);
+            }, null, "arrayChange");
+        }else{
+            target.subscribe(function(newValue){
+                options.hydratePayload(options);
+            });
+        }
     };
 
     var hydratePayload = function(options){
