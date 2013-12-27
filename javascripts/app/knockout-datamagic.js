@@ -46,7 +46,7 @@ datamagic.Binder.prototype = function(){
                 }
             }
         }
-    }
+    };
 
     var shouldTrack = function(prop, target){
         if(!isExcludedProperty.call(this, prop)){
@@ -96,7 +96,7 @@ datamagic.Binder.prototype = function(){
 
     var hydratePayload = function(options){
         options.payload = ko.toJS(options.viewModel);
-        if(options.exclusions && options.exclusions.length > 0) options.cleanPayload(options)
+        if(options.exclusions && options.exclusions.length > 0) options.cleanPayload(options);
         if(options.payload) options.callBack(options.payload);
     };
 
@@ -171,5 +171,5 @@ datamagic.dm = function(parameters){
     return{
         start   : self.start,
         stop    : self.stop
-    }
+    };
 };

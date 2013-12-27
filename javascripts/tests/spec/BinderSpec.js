@@ -23,7 +23,7 @@ describe("A binder", function() {
     it("must reflect the value of a boolean observable", function(){
        viewModel = {
            yesNo : ko.observable(false)
-       }
+       };
 
         var exclusions = [];
         binder.attach(viewModel, exclusions, function(data){
@@ -203,7 +203,7 @@ describe("A binder", function() {
                 list: [
                     { completed : true }
                 ]
-            }
+            };
 
             var one = JSON.stringify(actual).replace(/(\\t|\\n)/g,''),
                 two = JSON.stringify(expected).replace(/(\\t|\\n)/g,'');
@@ -271,7 +271,7 @@ describe("A binder", function() {
                     { title: "One", completed : false },
                     { title: "Two", completed : false }
                 ]
-            }
+            };
 
             var one = JSON.stringify(actual).replace(/(\\t|\\n)/g,''),
                 two = JSON.stringify(expected).replace(/(\\t|\\n)/g,'');
@@ -313,7 +313,7 @@ describe("A binder", function() {
                     { title: "Two", completed : false },
                     { title: "Three", completed : false }
                 ]
-            }
+            };
 
             var one = JSON.stringify(actual).replace(/(\\t|\\n)/g,''),
                 two = JSON.stringify(expected).replace(/(\\t|\\n)/g,'');
@@ -354,7 +354,7 @@ describe("A binder", function() {
 
         var exclusions = ['excludeMe'];
         binder.attach(new viewModel(), exclusions, callBack);
-    })
+    });
 });
 
 

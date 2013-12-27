@@ -20,7 +20,7 @@ describe("A persistence provider", function(){
         wire    = new datamagic.FireWire(options);
         spyOn(wire, 'saveData');
 
-        wire.saveData.reset()
+        wire.saveData.reset();
 
         viewModel = {
           name  : ko.observable('Daniel'),
@@ -71,7 +71,7 @@ describe("A persistence provider with exclusions and not autoStarted", function(
 
         spyOn(wire, 'saveData');
 
-        wire.saveData.reset()
+        wire.saveData.reset();
 
         viewModel = {
             firstName  : ko.observable('Bob'),

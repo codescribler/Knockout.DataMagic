@@ -1,0 +1,29 @@
+{
+  "name": "Knockout.DataMagic",
+  "version": "0.0.0",
+  "description": "Database binding for knockout view models",
+  "main": "GruntFile.js",
+  "dependencies": {
+    "grunt": "~0.4.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-jasmine": "~0.5.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-uglify": "~0.2.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codescribler/Knockout.DataMagic.git"
+  },
+  "author": "Daniel Whittaker",
+  "license": "BSD",
+  "gitHead": "952ca2149afa77210619407e6dcba5bac8abe26f",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/codescribler/Knockout.DataMagic/issues"
+  }
+}
