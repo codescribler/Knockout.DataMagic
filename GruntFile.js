@@ -14,7 +14,7 @@ module.exports = function(grunt){
             }
         },
         jshint: {
-            all: ['javascripts/tests/spec/*.js', 'javascripts/app/**/*.js']
+            all: ['javascripts/tests/spec/*.js', 'javascripts/app/knockout-datamagic.js', 'javascripts/app/adapters/**/*.js']
         },
         watch: {
             files: ['javascripts/app/**/*.js', 'javascripts/tests/spec/**/*.js'],
@@ -36,6 +36,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-notify');
 
     grunt.registerTask('default', ['jasmine']);
 

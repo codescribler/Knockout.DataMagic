@@ -280,7 +280,7 @@ describe("A binder", function() {
         });
     });
 
-    it('payload must track changes within complex objects added to arrays after attach and after mutiple updates', function(){
+    it('payload must track changes within complex objects added to arrays after attach and after multiple updates', function(){
         var ComplexItem = function (title, completed) {
             this.title = ko.observable(title);
             this.completed = ko.observable(completed || false);
@@ -300,9 +300,8 @@ describe("A binder", function() {
         runs(function(){
             var exclusions = [];
             binder.attach(viewModel, exclusions, callBack);
-            viewModel.list.push(new ComplexItem("Two", true));
+            viewModel.list.push(new ComplexItem("Two", true)); //, new ComplexItem("Three", true)]);
             viewModel.list.push(new ComplexItem("Three", true));
-            viewModel.list()[1].completed(false);
             viewModel.list()[2].completed(false);
         });
 
@@ -310,7 +309,46 @@ describe("A binder", function() {
             var expected = {
                 list: [
                     { title: "One", completed : false },
-                    { title: "Two", completed : false },
+                    { title: "Two", completed : true },
+                    { title: "Three", completed : false }
+                ]
+            };
+
+            var one = JSON.stringify(actual).replace(/(\\t|\\n)/g,''),
+                two = JSON.stringify(expected).replace(/(\\t|\\n)/g,'');
+
+            return one === two;
+        });
+    });
+
+    it('payload must track changes within complex objects added to arrays after attach via splice', function(){
+        var ComplexItem = function (title, completed) {
+            this.title = ko.observable(title);
+            this.completed = ko.observable(completed || false);
+        };
+
+        viewModel = {
+            list : ko.observableArray([
+                new ComplexItem("One", false),
+                new ComplexItem("Two", true)
+            ])
+        };
+
+        var callBack = function(data){
+            actual = data;
+        };
+
+        runs(function(){
+            var exclusions = [];
+            binder.attach(viewModel, exclusions, callBack);
+            viewModel.list.splice(1, 2, new ComplexItem("Three", true));
+            viewModel.list()[1].completed(false);
+        });
+
+        waitsFor(function(){
+            var expected = {
+                list: [
+                    { title: "One", completed : false },
                     { title: "Three", completed : false }
                 ]
             };
@@ -357,56 +395,3 @@ describe("A binder", function() {
     });
 });
 
-
-
-/*    it("should be able to play a Song", function() {
-        binder.play(song);
-        expect(binder.currentlyPlayingSong).toEqual(song);
-
-        //demonstrates use of custom matcher
-        expect(binder).toBePlaying(song);
-    });
-
-    describe("when song has been paused", function() {
-        beforeEach(function() {
-            binder.play(song);
-            binder.pause();
-        });
-
-        it("should indicate that the song is currently paused", function() {
-            expect(binder.isPlaying).toBeFalsy();
-
-            // demonstrates use of 'not' with a custom matcher
-            expect(binder).not.toBePlaying(song);
-        });
-
-        it("should be possible to resume", function() {
-            binder.resume();
-            expect(binder.isPlaying).toBeTruthy();
-            expect(binder.currentlyPlayingSong).toEqual(song);
-        });
-    });
-
-    // demonstrates use of spies to intercept and test method calls
-    it("tells the current song if the user has made it a favorite", function() {
-        spyOn(song, 'persistFavoriteStatus');
-
-        binder.play(song);
-        binder.makeFavorite();
-
-        expect(song.persistFavoriteStatus).toHaveBeenCalledWith(true);
-    });
-
-    //demonstrates use of expected exceptions
-    describe("#resume", function() {
-        it("should throw an exception if song is already playing", function() {
-            binder.play(song);
-
-            expect(function() {
-                binder.resume();
-            }).toThrow("song is already playing");
-        });
-    });*//*
-
-});
-*/

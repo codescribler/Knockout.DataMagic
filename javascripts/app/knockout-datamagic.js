@@ -80,11 +80,22 @@ datamagic.Binder.prototype = function(){
     ko.extenders.logChange = function(target, options){
         if(isKnockoutArray(target)){
             target.subscribe(function(changes){
-                if(changes[0].status === "added"){
+
+                var rebind = false;
+
+                for(var i = 0; i < changes.length; i++){
+                    if(changes[i].status === "added") {
+                        rebind = true;
+                        break;
+                    }
+                }
+
+                if(rebind){
                     // Seems a bit excessive - could cause a performance issue here
                     // TODO: Work out how to bind to changes in the new object
                     attach(options.viewModel, options.exclusions,options.callBack);
                 }
+
                 options.hydratePayload(options);
             }, null, "arrayChange");
         }else{
@@ -93,6 +104,8 @@ datamagic.Binder.prototype = function(){
             });
         }
     };
+
+
 
     var hydratePayload = function(options){
         options.payload = ko.toJS(options.viewModel);
@@ -113,7 +126,6 @@ datamagic.Binder.prototype = function(){
             }
         }
         target = removeExcludedProperties(target, exclusions);
-
 
         return target;
     };
@@ -146,7 +158,6 @@ datamagic.dm = function(parameters){
     self.initialised = false;
 
     self.init = function(){
-        //self.wire.init(self.options);
         self.binder.attach(self.viewModel, self.options.exclusions || [], self.receiveUpdate);
         self.initialised = true;
     };
