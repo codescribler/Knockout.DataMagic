@@ -5,7 +5,7 @@ Supper simple 3 way data binding for your knockout view models. A fast and effec
 and running in no time. Simply point your view model at a database like firebase or an api url and DataMagic will save your changes as they happen!
 
 
-Take a look at [the project site](http://codescribler.github.io/Knockout.DataMagic) for more info. 
+Take a look at [the project site](http://codescribler.github.io/Knockout.DataMagic) for more info.
 
 # Installation #
 Just include knockout-datamagic.js after jQuery and knockoutjs version 3! For a supper simple experience, sign up for a free firebase database and include the 'firewire.js' wire from the the data adapters folder.
@@ -41,7 +41,7 @@ View models often contain observables that you do not wish to persist so you can
 
 
     var options = {
-        exclusions  : ["current", "filteredTodos", "completedCount",  "allCompleted", "loading"]
+        exclusions  : ["fullName"]
     };
 
     var dm = new datamagic.dm({viewModel: vm, wire: fireWire, options: options});
