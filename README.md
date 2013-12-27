@@ -45,3 +45,10 @@ View models often contain observables that you do not wish to persist so you can
 
 
 When you receive updates to the data from the server, just call dm.stop() update the view model and then call dm.start(). This avoids going round in circles.
+
+# Known issues #
+
+This library is in its very early stages of development and is liable to change and does have some known issues.
+
+1. If you make multiple changes in one go, including adding new complex objects to an observable array, the new objects may not get tracked.
+2. The 'todo' demo stops tracking changes after the second 'to do' is marked as complete. All other actions continue to work.
