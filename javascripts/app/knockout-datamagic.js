@@ -81,20 +81,17 @@ datamagic.Binder.prototype = function(){
         if(isKnockoutArray(target)){
             target.subscribe(function(changes){
 
-                var rebind = false;
-
                 for(var i = 0; i < changes.length; i++){
                     if(changes[i].status === "added") {
-                        rebind = true;
-                        break;
+                        if(target()[changes[i].index].extend) attachExtenders.call(this, target()[changes[i].index], options.exclusions);
                     }
                 }
 
-                if(rebind){
-                    // Seems a bit excessive - could cause a performance issue here
-                    // TODO: Work out how to bind to changes in the new object
-                    attach(options.viewModel, options.exclusions,options.callBack);
-                }
+//                if(rebind){
+//                    // Seems a bit excessive - could cause a performance issue here
+//                    // TODO: Work out how to bind to changes in the new object
+//                    attach(options.viewModel, options.exclusions,options.callBack);
+//                }
 
                 options.hydratePayload(options);
             }, null, "arrayChange");

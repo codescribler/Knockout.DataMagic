@@ -4,10 +4,13 @@ Knockout.DataMagic
 Supper simple 3 way data binding for your knockout view models. A fast and effective way to get your data into a database and get you app up
 and running in no time. Simply point your view model at a database like firebase or an api url and DataMagic will save your changes as they happen!
 
+### Useful links ###
+1. Take a look at [the project site](http://codescribler.github.io/Knockout.DataMagic) for more info.
+2. The [jasmine test suite](http://codescribler.github.io/Knockout.DataMagic/SpecRunner.html).
 
-Take a look at [the project site](http://codescribler.github.io/Knockout.DataMagic) for more info.
 
 # Installation #
+
 Just include knockout-datamagic.js after jQuery and knockoutjs version 3! For a supper simple experience, sign up for a free firebase database and include the 'firewire.js' wire from the the data adapters folder.
 You will need to set up you your end point of choice.
 
