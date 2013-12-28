@@ -8,6 +8,9 @@ and running in no time. Simply point your view model at a database like firebase
 1. Take a look at [the project site](http://codescribler.github.io/Knockout.DataMagic) for more info.
 2. The [jasmine test suite](http://codescribler.github.io/Knockout.DataMagic/SpecRunner.html).
 
+# Dependencies #
+
+You will need knockoutjs version <strong>3</strong> or higher and the jQuery.
 
 # Installation #
 
