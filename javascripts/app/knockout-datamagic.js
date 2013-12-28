@@ -73,25 +73,30 @@ datamagic.Binder.prototype = function(){
                 exclusions : this.exclusions
             };
             //observable = observable.extend({logChange : options });
-            observable.extend({logChange : options });
+            if(observable.isChangeLogged === undefined) observable.extend({logChange : options });
+            observable.isChangeLogged = true;
         }
     };
 
     ko.extenders.logChange = function(target, options){
+
         if(isKnockoutArray(target)){
             target.subscribe(function(changes){
 
+                var rebind = false;
+
                 for(var i = 0; i < changes.length; i++){
                     if(changes[i].status === "added") {
-                        if(target()[changes[i].index].extend) attachExtenders.call(this, target()[changes[i].index], options.exclusions);
+                        rebind = true;
+                        break;
                     }
                 }
 
-//                if(rebind){
+                if(rebind){
 //                    // Seems a bit excessive - could cause a performance issue here
 //                    // TODO: Work out how to bind to changes in the new object
-//                    attach(options.viewModel, options.exclusions,options.callBack);
-//                }
+                    attach(options.viewModel, options.exclusions,options.callBack);
+                }
 
                 options.hydratePayload(options);
             }, null, "arrayChange");
