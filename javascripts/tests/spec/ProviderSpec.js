@@ -17,10 +17,10 @@ describe("A persistence provider", function(){
             baseUrl     : "http://www.example.com/",
             autoStart: true
         };
-        wire    = new datamagic.FireWire(options);
+        wire    = new datamagic.ConsoleWire(options);
         spyOn(wire, 'saveData');
 
-        wire.saveData.reset()
+        wire.saveData.reset();
 
         viewModel = {
           name  : ko.observable('Daniel'),
@@ -53,6 +53,46 @@ describe("A persistence provider", function(){
         expect(wire.saveData).toHaveBeenCalledWith({ name : 'Daniel', age : 35, alive : true });
         expect(wire.saveData.callCount).toEqual(2);
     });
+
+    describe("when dealing with observable arrays containing complex objects", function(){
+        var provider;
+        var viewModel;
+        var wire;
+        var options;
+        var ComplexItem = function(name, age){
+            var self = this;
+            self.name = ko.observable(name);
+            self.age = ko.observable(age);
+        };
+
+        beforeEach(function() {
+            options = {baseUrl : "http://www.example.com"};
+            wire    = new datamagic.ConsoleWire(options);
+            spyOn(wire, 'saveData');
+            wire.saveData.reset();
+
+            viewModel = {
+                list  : ko.observableArray()
+            };
+
+            provider = new datamagic.dm({viewModel: viewModel, wire: wire, options: options});
+        });
+
+        it("should call save data once on change for complex item added after attach", function(){
+            provider.start();
+
+            viewModel.list.push(new ComplexItem("Bob", 30));
+            viewModel.list.push(new ComplexItem("Bill", 31));
+            viewModel.list.push(new ComplexItem("Jill", 41));
+            viewModel.list.splice(1, 2, new ComplexItem("Santa", 21));
+            wire.saveData.reset();
+
+            viewModel.list()[0].age(45);
+            expect(wire.saveData.callCount).toEqual(1);
+        });
+    });
+
+
 });
 
 describe("A persistence provider with exclusions and not autoStarted", function(){
@@ -67,11 +107,11 @@ describe("A persistence provider with exclusions and not autoStarted", function(
             baseUrl     : "http://www.example.com/",
             exclusions  : ["lastName", "age"]
         };
-        wire    = new datamagic.FireWire(options);
+        wire    = new datamagic.ConsoleWire(options);
 
         spyOn(wire, 'saveData');
 
-        wire.saveData.reset()
+        wire.saveData.reset();
 
         viewModel = {
             firstName  : ko.observable('Bob'),
@@ -94,4 +134,6 @@ describe("A persistence provider with exclusions and not autoStarted", function(
         expect(wire.saveData.callCount).toEqual(0);
     });
 });
+
+
 

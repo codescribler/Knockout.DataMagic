@@ -46,7 +46,7 @@ datamagic.Binder.prototype = function(){
                 }
             }
         }
-    }
+    };
 
     var shouldTrack = function(prop, target){
         if(!isExcludedProperty.call(this, prop)){
@@ -73,18 +73,31 @@ datamagic.Binder.prototype = function(){
                 exclusions : this.exclusions
             };
             //observable = observable.extend({logChange : options });
-            observable.extend({logChange : options });
+            if(observable.isChangeLogged === undefined) observable.extend({logChange : options });
+            observable.isChangeLogged = true;
         }
     };
 
     ko.extenders.logChange = function(target, options){
+
         if(isKnockoutArray(target)){
             target.subscribe(function(changes){
-                if(changes[0].status === "added"){
-                    // Seems a bit excessive - could cause a performance issue here
-                    // TODO: Work out how to bind to changes in the new object
+
+                var rebind = false;
+
+                for(var i = 0; i < changes.length; i++){
+                    if(changes[i].status === "added") {
+                        rebind = true;
+                        break;
+                    }
+                }
+
+                if(rebind){
+//                    // Seems a bit excessive - could cause a performance issue here
+//                    // TODO: Work out how to bind to changes in the new object
                     attach(options.viewModel, options.exclusions,options.callBack);
                 }
+
                 options.hydratePayload(options);
             }, null, "arrayChange");
         }else{
@@ -94,9 +107,11 @@ datamagic.Binder.prototype = function(){
         }
     };
 
+
+
     var hydratePayload = function(options){
         options.payload = ko.toJS(options.viewModel);
-        if(options.exclusions && options.exclusions.length > 0) options.cleanPayload(options)
+        if(options.exclusions && options.exclusions.length > 0) options.cleanPayload(options);
         if(options.payload) options.callBack(options.payload);
     };
 
@@ -113,7 +128,6 @@ datamagic.Binder.prototype = function(){
             }
         }
         target = removeExcludedProperties(target, exclusions);
-
 
         return target;
     };
@@ -146,7 +160,6 @@ datamagic.dm = function(parameters){
     self.initialised = false;
 
     self.init = function(){
-        //self.wire.init(self.options);
         self.binder.attach(self.viewModel, self.options.exclusions || [], self.receiveUpdate);
         self.initialised = true;
     };
@@ -171,5 +184,5 @@ datamagic.dm = function(parameters){
     return{
         start   : self.start,
         stop    : self.stop
-    }
+    };
 };
